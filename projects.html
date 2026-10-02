@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Crestro</title>
+  <meta name="description" content="Crestro project portfolio — OTA, OCR, PDF tools, code migration, email marketing, and more." />
+  <link rel="icon" href="logo.png" />
+  <meta name="theme-color" content="#030712" />
+  <meta property="og:title" content="Projects | Crestro" />
+  <meta property="og:description" content="Crestro project portfolio — OTA, OCR, PDF tools, code migration, email marketing, and more." />
+  <meta property="og:image" content="images/detail-code.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark">
+  <a class="skip" href="#main">Skip to content</a>
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Crestro" /><span>CRESTRO</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="what-we-do.html">What We Do</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="team.html">Team</a>
+        <a href="work-with-us.html">Work With Us</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <svg id="sunIcon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg id="moonIcon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <a href="work-with-us.html" class="btn btn-desktop" style="display:none">Get in touch</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMenu()">Home</a>
+      <a href="services.html" onclick="closeMenu()">Services</a>
+      <a href="what-we-do.html" onclick="closeMenu()">What We Do</a>
+      <a href="projects.html" onclick="closeMenu()">Projects</a>
+      <a href="team.html" onclick="closeMenu()">Team</a>
+      <a href="work-with-us.html" onclick="closeMenu()">Work With Us</a>
+    </div>
+  </nav>
+
+  <header id="main" class="page-hero"><div class="hero-bg" style="--hero:url('images/detail-analytics.jpg')"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div style="position:relative;z-index:1">
+      <p class="label reveal">Projects</p>
+      <h1 class="reveal reveal-d1">Products that define<br /><span class="gradient">what's next</span></h1>
+      <p class="reveal reveal-d2">From firmware fleets to document intelligence and growth platforms — real applications engineered for scale and clarity.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:0;padding-bottom:2rem">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Portfolio narrative</p>
+        <h2>Products shaped by real<br/><span class="gradient">operational pressure</span></h2>
+        <p class="section-desc">Each case below started with a concrete problem — fleet updates, document risk, legacy code, growth systems, or marketplace trust. The three product case studies come first, with interactive prototypes you can open.</p>
+      </div>
+    </div>
+  </section>
+
+
+<section class="section" style="padding-bottom:1rem"><div class="container"><article class="case" id="selorg"><div class="case-head"><p class="section-eyebrow">Organic grocery · Dark-store operations</p><h2>Selorg</h2><p class="section-desc">An organic grocery and delivery business run from dark stores. Four connected apps share one backend: customers order, pickers pack, handheld scanners verify every item, and an admin console runs the warehouse, stores and riders.</p></div><div class="story-block"><div class="story-text"><h3>Selorg Admin Dashboard</h3><p>A role-based command centre for warehouse, dark stores, pickers and riders. Eight roles, from Super Admin to Catalog Manager, each see only their scope, behind two-factor sign-in and an audit log.</p><div class="detail-block"><ul><li>Live order flow, SLA tracking and an alert feed for stalled picks and delayed transfers</li><li>Store and warehouse inventory, goods requests, receiving, putaway and transfer approvals</li><li>Rider and picker approvals, rosters, earning rules and payout runs</li><li>Catalog, promotions, home-page builder and content pipeline</li></ul></div><a class="btn btn-outline" style="margin-top:1.25rem" href="prototypes/selorg-admin.html" target="_blank" rel="noopener">Open interactive prototype</a></div><div class="story-media"><img src="images/work-selorg-admin.jpg" alt="Selorg Admin Dashboard screen" loading="lazy"/></div></div><div class="story-block reverse"><div class="story-text"><h3>Selorg Customer App</h3><p>A mobile shopping app for fresh produce, millets, dairy and groceries. Customers sign in with a phone, WhatsApp or email code, or browse as a guest.</p><div class="detail-block"><ul><li>Category browsing, search, offers and best-deal shelves</li><li>Cart with coupons and tip; pay by wallet, UPI, card or net banking</li><li>Order tracking from confirmed to delivered, plus cancellations, returns and refunds</li><li>Rider chat, support tickets and saved addresses, with loading, empty and error states designed</li></ul></div><a class="btn btn-outline" style="margin-top:1.25rem" href="prototypes/selorg-customer.html" target="_blank" rel="noopener">Open interactive prototype</a></div><div class="story-media shot"><img src="images/work-selorg-customer.jpg" alt="Selorg Customer App screen" loading="lazy"/></div></div><div class="story-block"><div class="story-text"><h3>Selorg Picker Pro</h3><p>A workforce app for warehouse and dark-store pickers, covering the full journey from application to payout.</p><div class="detail-block"><ul><li>Onboarding with Aadhaar and PAN checks, face verification and bank details</li><li>Shift selection, device collection with a manager code, and location-checked check-in</li><li>Attendance, overtime, weekly earnings and incentive tracking</li><li>Clear states for under review, approved, rejected, blocked and suspended accounts</li></ul></div><a class="btn btn-outline" style="margin-top:1.25rem" href="prototypes/selorg-picker.html" target="_blank" rel="noopener">Open interactive prototype</a></div><div class="story-media shot"><img src="images/work-selorg-picker.jpg" alt="Selorg Picker Pro screen" loading="lazy"/></div></div><div class="story-block reverse"><div class="story-text"><h3>Selorg HSD Scanner</h3><p>A handheld scanner flow for the pick floor, built for speed with gloves on and unreliable signal.</p><div class="detail-block"><ul><li>Scan the bag QR, then follow the pick list item by item</li><li>Scan outcomes for good, invalid, duplicate and rejected items, with a not-found path</li><li>Bag photo check and delivery-rack scan to close each order</li><li>Offline queue with sync retry, plus low-battery and session-expiry handling</li></ul></div><a class="btn btn-outline" style="margin-top:1.25rem" href="prototypes/selorg-hsd.html" target="_blank" rel="noopener">Open interactive prototype</a></div><div class="story-media shot"><img src="images/work-selorg-hsd.jpg" alt="Selorg HSD Scanner screen" loading="lazy"/></div></div></article><article class="case" id="mineral-bridge"><div class="case-head"><p class="section-eyebrow">B2B marketplace · Mineral trading</p><h2>Mineral Bridge</h2><p class="section-desc">A verified marketplace for trading 190+ mineral types. Buyers get assured, assayed lots with escrow-backed settlement. Sellers get an on-site evaluation, a firm offer and fast payment.</p></div><div class="story-block"><div class="story-text"><h3>Mineral Bridge Web App</h3><p>The public marketplace. Browsing is open to everyone, and identity is verified only when someone buys or lists.</p><div class="detail-block"><ul><li>Indicative rates, five categories and filterable lots</li><li>Lot pages with assay specifications, seller KYC status and a fee estimate</li><li>Sell-a-mineral flow where a verification team inspects on site</li><li>Auctions and an academy for buyers and small-scale miners</li></ul></div><a class="btn btn-outline" style="margin-top:1.25rem" href="prototypes/mb-web.html" target="_blank" rel="noopener">Open interactive prototype</a></div><div class="story-media"><img src="images/work-mb-web.jpg" alt="Mineral Bridge Web App screen" loading="lazy"/></div></div><div class="story-block reverse"><div class="story-text"><h3>Mineral Bridge Mobile Prototype</h3><p>A phone-first version covering more than 60 screens, from sign-up to payout.</p><div class="detail-block"><ul><li>KYC with ID capture, a liveness selfie and review states</li><li>Instant estimate, evaluation booking and a firm offer paid within 24 hours</li><li>Live auctions with bid states, and order tracking through escrow stages</li><li>Learning center with lesson player, plus help, chat and tickets</li></ul></div><a class="btn btn-outline" style="margin-top:1.25rem" href="prototypes/mb-mobile.html" target="_blank" rel="noopener">Open interactive prototype</a></div><div class="story-media shot"><img src="images/work-mb-mobile.jpg" alt="Mineral Bridge Mobile Prototype screen" loading="lazy"/></div></div><div class="story-block"><div class="story-text"><h3>Mineral Bridge Admin Dashboard</h3><p>The operations console behind every trade, with access scoped by role and two-factor verification for anyone who can edit.</p><div class="detail-block"><ul><li>Vault custody and inventory value by mineral</li><li>KYC and compliance queue with SLA tracking</li><li>Rate overrides, firm-offer approval and settlement batches</li><li>Disputes, partners and logistics, support tickets and a full audit log</li></ul></div><a class="btn btn-outline" style="margin-top:1.25rem" href="prototypes/mb-admin.html" target="_blank" rel="noopener">Open interactive prototype</a></div><div class="story-media"><img src="images/work-mb-admin.jpg" alt="Mineral Bridge Admin Dashboard screen" loading="lazy"/></div></div></article><article class="case" id="marvel"><div class="case-head"><p class="section-eyebrow">Website design · Renewable energy</p><h2>Marvel Green Energy</h2><p class="section-desc">A homepage design for a renewable-energy developer that builds, operates and trades solar, storage and agrivoltaic assets for industry, utilities and investors.</p></div><div class="story-block"><div class="story-text"><h3>Marvel Green Energy Homepage</h3><p>A credibility-first homepage that moves a visitor from the company's scale to a consultation request.</p><div class="detail-block"><ul><li>Hero with portfolio proof and two clear calls to action</li><li>Six solutions and eight industries, from utility-scale solar to data-center power</li><li>Filterable featured projects with capacity and output figures</li><li>Five-step delivery process, ESG metrics, partners, news and FAQ</li></ul></div><a class="btn btn-outline" style="margin-top:1.25rem" href="prototypes/marvel.html" target="_blank" rel="noopener">Open interactive prototype</a></div><div class="story-media"><img src="images/work-marvel.jpg" alt="Marvel Green Energy Homepage screen" loading="lazy"/></div></div></article></div></section>
+
+  <section class="section">
+    <div class="container">
+      <h2 style="margin-bottom:2rem">More projects</h2>
+      <div class="grid-2">
+        <a href="project-ota.html" class="project-card glass-panel reveal-scale">
+          <div class="project-img">
+            <img src="images/project-ota.jpg" alt="OTA platform" loading="lazy"/>
+          </div>
+          <div class="project-body">
+            <p class="project-tag">IoT · Platform</p>
+            <h3>Over The Air (OTA)</h3>
+            <p>Remote firmware and configuration updates for distributed device fleets — staged rollouts, rollback, and secure delivery.</p>
+          </div>
+        </a>
+        <a href="project-ocr.html" class="project-card glass-panel reveal-scale reveal-d1">
+          <div class="project-img">
+            <img src="images/project-ocr.jpg" alt="OCR documents" loading="lazy"/>
+          </div>
+          <div class="project-body">
+            <p class="project-tag">AI · Documents</p>
+            <h3>OCR with Compare Docs</h3>
+            <p>Extract text from scans and compare document versions side-by-side with highlighted differences.</p>
+          </div>
+        </a>
+        <a href="project-pdf.html" class="project-card glass-panel reveal-scale">
+          <div class="project-img">
+            <img src="images/project-pdf.jpg" alt="PDF editor" loading="lazy"/>
+          </div>
+          <div class="project-body">
+            <p class="project-tag">Productivity · Documents</p>
+            <h3>PDF Editor & Extraction</h3>
+            <p>Edit PDFs in place and extract structured data — text, tables, forms — into JSON, CSV, or Excel.</p>
+          </div>
+        </a>
+        <a href="project-migration.html" class="project-card glass-panel reveal-scale reveal-d1">
+          <div class="project-img">
+            <img src="images/project-migration.jpg" alt="Code migration" loading="lazy"/>
+          </div>
+          <div class="project-body">
+            <p class="project-tag">Engineering · Modernization</p>
+            <h3>Code Migration Platform</h3>
+            <p>Automate language and framework migrations with analysis, incremental rollout, and parity validation.</p>
+          </div>
+        </a>
+        <a href="project-email.html" class="project-card glass-panel reveal-scale">
+          <div class="project-img">
+            <img src="images/project-email.jpg" alt="Email marketing" loading="lazy"/>
+          </div>
+          <div class="project-body">
+            <p class="project-tag">Marketing · Growth</p>
+            <h3>Email Marketing App</h3>
+            <p>Design, segment, send, and measure campaigns with templates, automation, and A/B testing.</p>
+          </div>
+        </a>
+        <a href="project-keepsake.html" class="project-card glass-panel reveal-scale reveal-d1">
+          <div class="project-img">
+            <img src="images/project-keepsake.jpg" alt="Newborn keepsake" loading="lazy"/>
+          </div>
+          <div class="project-body">
+            <p class="project-tag">Consumer · Lifestyle</p>
+            <h3>Newborn Keepsake</h3>
+            <p>Capture milestones, photos, and memories in one place — timelines, albums, and family sharing.</p>
+          </div>
+        </a>
+        <a href="project-alpr.html" class="project-card glass-panel reveal-scale">
+          <div class="project-img">
+            <img src="images/project-alpr.jpg" alt="License plate recognition" loading="lazy"/>
+          </div>
+          <div class="project-body">
+            <p class="project-tag">Computer Vision · Security</p>
+            <h3>License Plate Recognition</h3>
+            <p>Real-time ALPR from camera feeds for access control, parking, tolling, and security alerts.</p>
+          </div>
+        </a>
+        <a href="project-pg-hotel.html" class="project-card glass-panel reveal-scale reveal-d1">
+          <div class="project-img">
+            <img src="images/project-pg.jpg" alt="PG Hotel platform" loading="lazy"/>
+          </div>
+          <div class="project-body">
+            <p class="project-tag">Marketplace · Hospitality</p>
+            <h3>PG / Hotel Platform</h3>
+            <p>Search, compare, and book PG stays and hotels — verified listings, maps, and owner dashboards.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section" style="background:color-mix(in srgb, var(--card) 25%, transparent)">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem">
+        <p class="label reveal">Client voices</p>
+        <h2 class="reveal reveal-d1">What partners say about<br/><span class="gradient">the work</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">The OTA platform Crestro delivered is the backbone of our fleet ops. Staged rollouts and automatic rollback gave us confidence we never had with ad-hoc scripts.</p>
+          <div class="testimonial-author">
+            <img src="images/face-marcus.jpg" alt="Marcus Chen" loading="lazy"/>
+            <div><strong>Marcus Chen</strong><span>VP Engineering, NexGrid IoT · OTA</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-d1">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">From discovery to go-live, Crestro treated our PG booking product like a real marketplace — not a brochure site. Occupancy tools for hosts were a game changer.</p>
+          <div class="testimonial-author">
+            <img src="images/face-aisha.jpg" alt="Aisha Rahman" loading="lazy"/>
+            <div><strong>Aisha Rahman</strong><span>Founder, StayNest · PG/Hotel</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-d2">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">Code migration used to mean months of risk. Their platform and process let us move module by module with parity checks — we retired the legacy stack on schedule.</p>
+          <div class="testimonial-author">
+            <img src="images/face-david.jpg" alt="David Park" loading="lazy"/>
+            <div><strong>David Park</strong><span>CTO, LedgerStack · Migration</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">ALPR accuracy in mixed lighting was the make-or-break. Crestro’s system integrated cleanly with our gates and cut manual logging to near zero.</p>
+          <div class="testimonial-author">
+            <img src="images/face-robert.jpg" alt="Robert Hayes" loading="lazy"/>
+            <div><strong>Robert Hayes</strong><span>Facilities Director, MetroPark · ALPR</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="section" style="text-align:center;background:color-mix(in srgb, var(--card) 30%, transparent)">
+    <div class="container">
+      <h2 class="reveal">Building something similar?</h2>
+      <p class="section-desc reveal reveal-d1" style="margin-left:auto;margin-right:auto">Tell us about your product — we’ll map scope, timeline, and the right approach.</p>
+      <div style="margin-top:1.75rem" class="reveal reveal-d2"><a href="work-with-us.html" class="btn btn-lg">Work with us</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Crestro" style="width:32px;height:32px" /><div><span>CRESTRO</span><p style="font-size:0.7rem;color:var(--muted);font-weight:400">Engineering What's Next</p></div></a>
+      <div class="footer-links"><a href="services.html">Services</a><a href="what-we-do.html">What We Do</a><a href="projects.html">Projects</a><a href="team.html">Team</a><a href="work-with-us.html">Contact</a></div>
+      <p class="copyright">© 2026 Crestro. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

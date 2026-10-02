@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team | Crestro</title>
+  <meta name="description" content="Meet the Crestro team — directors and specialists engineering what's next." />
+  <link rel="icon" href="logo.png" />
+  <meta name="theme-color" content="#030712" />
+  <meta property="og:title" content="Team | Crestro" />
+  <meta property="og:description" content="Meet the Crestro team — directors and specialists engineering what's next." />
+  <meta property="og:image" content="images/detail-code.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark">
+  <a class="skip" href="#main">Skip to content</a>
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Crestro" /><span>CRESTRO</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="what-we-do.html">What We Do</a>
+        <a href="projects.html">Projects</a>
+        <a href="team.html" class="active">Team</a>
+        <a href="work-with-us.html">Work With Us</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <svg id="sunIcon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg id="moonIcon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <a href="work-with-us.html" class="btn btn-desktop" style="display:none">Get in touch</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMenu()">Home</a>
+      <a href="services.html" onclick="closeMenu()">Services</a>
+      <a href="what-we-do.html" onclick="closeMenu()">What We Do</a>
+      <a href="projects.html" onclick="closeMenu()">Projects</a>
+      <a href="team.html" onclick="closeMenu()">Team</a>
+      <a href="work-with-us.html" onclick="closeMenu()">Work With Us</a>
+    </div>
+  </nav>
+
+  <header id="main" class="page-hero"><div class="hero-bg" style="--hero:url('images/detail-desk.jpg')"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div style="position:relative;z-index:1">
+      <p class="section-eyebrow reveal">Team</p>
+      <h1 class="reveal reveal-d1">People who engineer<br /><span class="gradient">what's next</span></h1>
+      <p class="reveal reveal-d2">A tight-knit group of designers, engineers, strategists, and marketers — working side by side so craft and delivery never drift apart.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="story-block">
+        <div class="story-text reveal-left">
+          <p class="section-eyebrow">How we operate</p>
+          <h3>Small teams, high ownership</h3>
+          <p>We avoid the agency pattern where a client meets sales once and never sees the people building the product. Your project has a clear owner, a stable core team, and direct access to the people making decisions.</p>
+          <p>Directors stay close to delivery. Specialists stay close to the problem. That combination is how we keep quality high without slowing the schedule.</p>
+        </div>
+        <div class="story-media reveal-right"><img src="images/detail-code.jpg" alt="Crestro team collaboration" loading="lazy"/></div>
+      </div>
+      <!-- <div class="metric-strip stagger" style="margin-top:2rem">
+        <div class="metric-item reveal-scale"><strong>13+</strong><span>Core team members</span></div>
+        <div class="metric-item reveal-scale"><strong>3</strong><span>Directors in delivery</span></div>
+        <div class="metric-item reveal-scale"><strong>1</strong><span>Shared quality bar</span></div>
+        <div class="metric-item reveal-scale"><strong>∞</strong><span>Curiosity about craft</span></div>
+      </div> -->
+    </div>
+  </section>
+
+
+<!-- Team member details hidden for now
+  <section class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal" style="margin-bottom:1.5rem">Leadership</p>
+      <div class="grid-3" style="margin-bottom:4rem">
+        <div class="card team-card reveal">
+          <div class="team-avatar"><img src="images/team-arjun.jpg" alt="Arjun Kapoor" loading="lazy"/></div>
+          <span class="team-badge">Director</span>
+          <h3>Arjun Kapoor</h3>
+          <p class="team-role">Founder & CEO</p>
+          <p class="team-bio">Sets product vision and client partnerships. 15+ years building digital businesses across SaaS and education.</p>
+        </div>
+        <div class="card team-card reveal reveal-d1">
+          <div class="team-avatar"><img src="images/team-sneha.jpg" alt="Sneha Rao" loading="lazy"/></div>
+          <span class="team-badge">Director</span>
+          <h3>Sneha Rao</h3>
+          <p class="team-role">Co-Founder & CTO</p>
+          <p class="team-bio">Leads engineering architecture and delivery. Passionate about scalable systems and clean product engineering.</p>
+        </div>
+        <div class="card team-card reveal reveal-d2">
+          <div class="team-avatar"><img src="images/team-vikram.jpg" alt="Vikram Mehta" loading="lazy"/></div>
+          <span class="team-badge">Director</span>
+          <h3>Vikram Mehta</h3>
+          <p class="team-role">Director of Strategy</p>
+          <p class="team-bio">Guides business consultation and go-to-market. Former consulting lead for growth-stage technology firms.</p>
+        </div>
+      </div>
+
+      <p class="section-eyebrow reveal" style="margin-bottom:1.5rem">Core team</p>
+      <div class="grid-3">
+        <div class="card team-card reveal">
+          <div class="team-avatar"><img src="images/team-priya.jpg" alt="Priya Nair" loading="lazy"/></div>
+          <h3>Priya Nair</h3>
+          <p class="team-role">Head of Design</p>
+          <p class="team-bio">Owns UX/UI and design systems. Believes clarity and craft are non-negotiable in every interface.</p>
+        </div>
+        <div class="card team-card reveal reveal-d1">
+          <div class="team-avatar"><img src="images/team-rahul.jpg" alt="Rahul Sharma" loading="lazy"/></div>
+          <h3>Rahul Sharma</h3>
+          <p class="team-role">Lead Frontend Engineer</p>
+          <p class="team-bio">Builds performant, accessible interfaces. Expert in modern React ecosystems and motion design.</p>
+        </div>
+        <div class="card team-card reveal reveal-d2">
+          <div class="team-avatar"><img src="images/team-ananya.jpg" alt="Ananya Joshi" loading="lazy"/></div>
+          <h3>Ananya Joshi</h3>
+          <p class="team-role">Lead Backend Engineer</p>
+          <p class="team-bio">Designs APIs and data systems that stay reliable under load. Focus on security and observability.</p>
+        </div>
+        <div class="card team-card reveal">
+          <div class="team-avatar"><img src="images/team-karan.jpg" alt="Karan Desai" loading="lazy"/></div>
+          <h3>Karan Desai</h3>
+          <p class="team-role">Growth Marketing Lead</p>
+          <p class="team-bio">Runs performance marketing and SEO programs that turn product strengths into pipeline.</p>
+        </div>
+        <div class="card team-card reveal reveal-d1">
+          <div class="team-avatar"><img src="images/team-meera.jpg" alt="Meera Iyer" loading="lazy"/></div>
+          <h3>Meera Iyer</h3>
+          <p class="team-role">Education Practice Lead</p>
+          <p class="team-bio">Specializes in edtech products and institutional digital transformation projects.</p>
+        </div>
+        <div class="card team-card reveal reveal-d2">
+          <div class="team-avatar"><img src="images/team-tara.jpg" alt="Tara Gupta" loading="lazy"/></div>
+          <h3>Tara Gupta</h3>
+          <p class="team-role">Product Manager</p>
+          <p class="team-bio">Bridges clients, design, and engineering. Keeps roadmaps honest and delivery predictable.</p>
+        </div>
+        <div class="card team-card reveal">
+          <div class="team-avatar"><img src="images/team-nikhil.jpg" alt="Nikhil Sethi" loading="lazy"/></div>
+          <h3>Nikhil Sethi</h3>
+          <p class="team-role">DevOps & Cloud Engineer</p>
+          <p class="team-bio">Owns CI/CD, infrastructure, and production reliability across client deployments.</p>
+        </div>
+        <div class="card team-card reveal reveal-d1">
+          <div class="team-avatar"><img src="images/team-leena.jpg" alt="Leena Bhat" loading="lazy"/></div>
+          <h3>Leena Bhat</h3>
+          <p class="team-role">Content & Brand Strategist</p>
+          <p class="team-bio">Shapes messaging and content systems that support both product marketing and thought leadership.</p>
+        </div>
+        <div class="card team-card reveal reveal-d2">
+          <div class="team-avatar"><img src="images/team-hassan.jpg" alt="Hassan Omar" loading="lazy"/></div>
+          <h3>Hassan Omar</h3>
+          <p class="team-role">QA & Performance Lead</p>
+          <p class="team-bio">Ensures quality through automation, accessibility checks, and performance budgets.</p>
+        </div>
+        <div class="card team-card reveal">
+          <div class="team-avatar"><img src="images/team-sofia.jpg" alt="Sofia Chen" loading="lazy"/></div>
+          <h3>Sofia Chen</h3>
+          <p class="team-role">Client Success Manager</p>
+          <p class="team-bio">Makes long-term partnerships work — onboarding, reporting, and continuous improvement loops.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+-->
+
+  <section class="section" style="text-align:center;background:color-mix(in srgb, var(--card) 30%, transparent)">
+    <div class="container">
+      <h2 class="reveal">Want to join the team?</h2>
+      <p class="section-desc reveal reveal-d1" style="margin-left:auto;margin-right:auto">We’re always interested in people who care about craft and impact.</p>
+      <div style="margin-top:1.75rem" class="reveal reveal-d2"><a href="mailto:hello@crestro.io" class="btn btn-lg">hello@crestro.io</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Crestro" style="width:32px;height:32px" /><div><span>CRESTRO</span><p style="font-size:0.7rem;color:var(--muted);font-weight:400">Engineering What's Next</p></div></a>
+      <div class="footer-links"><a href="services.html">Services</a><a href="what-we-do.html">What We Do</a><a href="projects.html">Projects</a><a href="team.html">Team</a><a href="work-with-us.html">Contact</a></div>
+      <p class="copyright">© 2026 Crestro. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

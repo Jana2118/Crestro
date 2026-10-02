@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What We Do | Crestro</title>
+  <meta name="description" content="Our structured process from discovery to deployment." />
+  <link rel="icon" href="logo.png" />
+  <meta name="theme-color" content="#030712" />
+  <meta property="og:title" content="What We Do | Crestro" />
+  <meta property="og:description" content="Our structured process from discovery to deployment." />
+  <meta property="og:image" content="images/detail-code.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark">
+  <a class="skip" href="#main">Skip to content</a>
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Crestro" /><span>CRESTRO</span></a>
+      <div class="nav-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="what-we-do.html" class="active">What We Do</a><a href="projects.html">Projects</a><a href="team.html">Team</a><a href="work-with-us.html">Work With Us</a></div>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <svg id="sunIcon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg id="moonIcon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <a href="work-with-us.html" class="btn btn-desktop" style="display:none">Get in touch</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu"><a href="index.html" onclick="closeMenu()">Home</a><a href="services.html" onclick="closeMenu()">Services</a><a href="what-we-do.html" onclick="closeMenu()">What We Do</a><a href="projects.html" onclick="closeMenu()">Projects</a><a href="team.html" onclick="closeMenu()">Team</a><a href="work-with-us.html" onclick="closeMenu()">Work With Us</a></div>
+  </nav>
+
+  <header id="main" class="page-hero"><div class="hero-bg" style="--hero:url('images/detail-desk.jpg')"></div>
+    <div class="orb orb-1"></div><div class="orb orb-2"></div>
+    <div style="position:relative;z-index:1">
+      <p class="section-eyebrow reveal" style="justify-content:center">What we do</p>
+      <h1 class="reveal reveal-d1">Our development<br/><span class="gradient">process</span></h1>
+      <p class="reveal reveal-d2" style="max-width:36rem;margin:0 auto;color:var(--muted)">A structured approach to building reliable, scalable products — no shortcuts, no silent simplifications between design and code.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container" style="max-width:900px">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Why process matters</p>
+        <h2>Clarity at every stage<br/><span class="gradient">reduces risk later</span></h2>
+        <p class="section-desc">When discovery is thin, design guesses. When design is vague, engineering invents. Our process keeps decisions visible so the whole team — including you — stays aligned.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <h4>01 · Discover & Strategize</h4>
+          <p>We begin by understanding your business, users, and goals before writing a single line of code. Business discovery, product strategy, user research, and technical planning form a shared foundation. The output is a clear problem statement, success metrics, and a feasible path forward.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <h4>02 · Design & Prototype</h4>
+          <p>We create intuitive experiences and interactive prototypes that validate ideas before development begins. Wireframes, UI design, design systems, and clickable prototypes reduce expensive rework. Stakeholders experience the product early — not after months of silent build.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <h4>03 · Develop & Test</h4>
+          <p>Engineers build scalable applications with modern technologies while quality is protected through continuous testing. Clean architecture, agile delivery, QA, and performance checks run together. Progress is visible; risks are raised early.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <h4>04 · Deploy & Scale</h4>
+          <p>We deploy on secure cloud infrastructure and help the product evolve as the business grows. CI/CD, monitoring, and continuous improvement keep releases predictable. Launch is a milestone — not the end of the partnership.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header center reveal">
+        <p class="section-eyebrow">Principles</p>
+        <h2>How decisions get made<br/><span class="gradient">inside the work</span></h2>
+      </div>
+      <div class="grid-2 stagger">
+        <div class="card reveal"><h3>Evidence over opinion</h3><p>We prefer user signals, technical constraints, and business metrics over preference debates. When trade-offs appear, we make them explicit.</p></div>
+        <div class="card reveal"><h3>Incremental value</h3><p>Big-bang launches hide risk. We sequence delivery so you can learn from real usage and adjust before the budget is gone.</p></div>
+        <div class="card reveal"><h3>Systems thinking</h3><p>Interfaces, APIs, data, and operations are one product. We design them together so growth does not require a rewrite.</p></div>
+        <div class="card reveal"><h3>Transparent communication</h3><p>Status, blockers, and decisions are shared in plain language. You should never need to decode what is really happening.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="text-align:center">
+    <div class="container">
+      <h2 class="reveal">Great products begin with<br/><span class="gradient">great planning</span></h2>
+      <p class="section-desc reveal reveal-d1" style="margin-left:auto;margin-right:auto">Every successful product starts with a clear process. Let's map yours.</p>
+      <div style="margin-top:1.75rem" class="reveal reveal-d2"><a href="work-with-us.html" class="btn btn-lg">Start a conversation</a></div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Crestro" style="width:32px;height:32px" /><div><span>CRESTRO</span><p style="font-size:0.7rem;color:var(--muted);font-weight:400">Engineering What's Next</p></div></a>
+      <div class="footer-links"><a href="services.html">Services</a><a href="what-we-do.html">What We Do</a><a href="projects.html">Projects</a><a href="team.html">Team</a><a href="work-with-us.html">Contact</a></div>
+      <p class="copyright">© 2026 Crestro. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

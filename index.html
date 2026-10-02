@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crestro | Engineering What's Next</title>
+  <meta name="description" content="Crestro builds software, digital marketing systems, and strategic consultation for teams that need products that scale." />
+  <link rel="icon" href="logo.png" />
+  <meta name="theme-color" content="#030712" />
+  <meta property="og:title" content="Crestro | Engineering What's Next" />
+  <meta property="og:description" content="Crestro builds software, digital marketing systems, and strategic consultation for teams that need products that scale." />
+  <meta property="og:image" content="images/detail-code.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Crestro" /><span>CRESTRO</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="what-we-do.html">What We Do</a>
+        <a href="projects.html">Projects</a>
+        <a href="team.html">Team</a>
+        <a href="work-with-us.html">Work With Us</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <svg id="sunIcon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg id="moonIcon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <a href="work-with-us.html" class="btn btn-desktop" style="display:none">Get in touch</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMenu()">Home</a>
+      <a href="services.html" onclick="closeMenu()">Services</a>
+      <a href="what-we-do.html" onclick="closeMenu()">What We Do</a>
+      <a href="projects.html" onclick="closeMenu()">Projects</a>
+      <a href="team.html" onclick="closeMenu()">Team</a>
+      <a href="work-with-us.html" onclick="closeMenu()">Work With Us</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="main" class="home-hero"><div class="hero-bg" style="--hero:url('images/detail-code.jpg')"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div style="position:relative;z-index:1;max-width:56rem">
+      <div class="badge reveal"><span class="badge-dot"></span> Digital product agency</div>
+      <h1 class="reveal reveal-d1">Engineering<br /><span class="gradient">What's Next</span></h1>
+      <p class="reveal reveal-d2" style="max-width:36rem;margin:0 auto;color:var(--muted);font-size:1.15rem;line-height:1.7">
+        We partner with ambitious teams to design, build, and grow digital products — software platforms, growth systems, and the strategy that holds them together.
+      </p>
+      <div class="hero-btns reveal reveal-d3">
+        <a href="work-with-us.html" class="btn btn-lg">Start a project</a>
+        <a href="projects.html" class="btn btn-outline btn-lg">See our work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY: Why Crestro -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">The story</p>
+        <h2>Built for teams who refuse<br/><span class="gradient">cookie-cutter delivery</span></h2>
+        <p class="section-desc">Most digital projects fail quietly — unclear scope, late surprises, products that look finished but do not survive real users. We structured Crestro to avoid that pattern.</p>
+      </div>
+      <div class="story-block">
+        <div class="story-media reveal-left">
+          <img src="images/detail-code.jpg" alt="Engineering collaboration" loading="lazy"/>
+        </div>
+        <div class="story-text reveal-right">
+          <h3>Design and engineering in one room</h3>
+          <p>When designers and developers work in separate silos, the handoff becomes the product. We keep strategy, UX, and implementation close so what you approve is what ships — without silent shortcuts.</p>
+          <p>That discipline shows up in cleaner systems, fewer post-launch surprises, and interfaces that stay coherent as the product grows.</p>
+        </div>
+      </div>
+      <div class="story-block reverse">
+        <div class="story-media reveal-right">
+          <img src="images/detail-analytics.jpg" alt="Product growth metrics" loading="lazy"/>
+        </div>
+        <div class="story-text reveal-left">
+          <h3>Outcomes over output</h3>
+          <p>Shipping features is easy. Shipping the right features — measured against real business and user goals — is the hard part. Every engagement starts with discovery so we know what success looks like before a single screen is designed.</p>
+          <p>Whether you need an MVP, a modernization program, or a growth engine, we sequence work so value arrives early and compounds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- SERVICES SEGMENT -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Capabilities</p>
+        <h2>Four ways we help you<br/><span class="gradient">move forward</span></h2>
+        <p class="section-desc">Software, marketing, business strategy, and education — connected under one delivery standard.</p>
+      </div>
+      <div class="grid-2 stagger">
+        <a href="services.html" class="card reveal">
+          <div class="card-icon"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div>
+          <h3>Software Services</h3>
+          <p>Web apps, mobile products, SaaS platforms, and enterprise systems — architecture that scales, interfaces that people actually use.</p>
+        </a>
+        <a href="services.html" class="card reveal">
+          <div class="card-icon"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/></svg></div>
+          <h3>Digital Marketing</h3>
+          <p>SEO, content, paid media, and conversion systems that turn product strengths into pipeline and retention.</p>
+        </a>
+        <a href="services.html" class="card reveal">
+          <div class="card-icon"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+          <h3>Business Consultation</h3>
+          <p>Product strategy, digital transformation roadmaps, and operating clarity so leadership can move with confidence.</p>
+        </a>
+        <a href="services.html" class="card reveal">
+          <div class="card-icon"><svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/></svg></div>
+          <h3>Education Consultation</h3>
+          <p>E-learning platforms, institutional digital readiness, and learning experience design for modern education teams.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS TEASER -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center reveal">
+        <p class="section-eyebrow">How we work</p>
+        <h2>A clear path from<br/><span class="gradient">idea to impact</span></h2>
+        <p class="section-desc" style="margin-left:auto;margin-right:auto">Discovery, design, build, and scale — structured so you always know where you are and what comes next.</p>
+      </div>
+      <div class="metric-strip stagger">
+        <div class="metric-item reveal-scale"><strong>01</strong><span>Discover & strategize</span></div>
+        <div class="metric-item reveal-scale"><strong>02</strong><span>Design & prototype</span></div>
+        <div class="metric-item reveal-scale"><strong>03</strong><span>Develop & test</span></div>
+        <div class="metric-item reveal-scale"><strong>04</strong><span>Deploy & scale</span></div>
+      </div>
+      <div style="text-align:center" class="reveal"><a href="what-we-do.html" class="btn">Explore the full process</a></div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="section"><div class="container"><div class="section-header"><p class="section-eyebrow">Selected work</p><h2>Recent products we designed and built</h2><p class="section-desc">Interactive prototypes you can open and use.</p></div><div class="grid-3"><a href="projects.html#selorg" class="project-card glass-panel"><div class="project-img"><img src="images/work-selorg-admin.jpg" alt="Selorg" loading="lazy"/></div><div class="project-body"><p class="project-tag">Organic grocery · Dark-store operations</p><h3>Selorg</h3><p>An organic grocery and delivery business run from dark stores. Four connected apps share one backend: customers order, pickers pack, handheld scanners verify every item, and an admin console runs the warehouse, stores and riders.</p></div></a><a href="projects.html#mineral-bridge" class="project-card glass-panel"><div class="project-img"><img src="images/work-mb-web.jpg" alt="Mineral Bridge" loading="lazy"/></div><div class="project-body"><p class="project-tag">B2B marketplace · Mineral trading</p><h3>Mineral Bridge</h3><p>A verified marketplace for trading 190+ mineral types. Buyers get assured, assayed lots with escrow-backed settlement. Sellers get an on-site evaluation, a firm offer and fast payment.</p></div></a><a href="projects.html#marvel" class="project-card glass-panel"><div class="project-img"><img src="images/work-marvel.jpg" alt="Marvel Green Energy" loading="lazy"/></div><div class="project-body"><p class="project-tag">Website design · Renewable energy</p><h3>Marvel Green Energy</h3><p>A homepage design for a renewable-energy developer that builds, operates and trades solar, storage and agrivoltaic assets for industry, utilities and investors.</p></div></a></div></div></section>
+
+  <!-- TESTIMONIALS (keep existing structure if present - rebuild clean) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header center reveal">
+        <p class="section-eyebrow">Testimonials</p>
+        <h2>Trusted by teams who<br/><span class="gradient">ship what matters</span></h2>
+      </div>
+      <div class="testimonials-grid cols-3 stagger">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">Crestro rebuilt our device update pipeline end to end. What used to take a week of field visits now rolls out in under an hour — with rollback we actually trust.</p>
+          <div class="testimonial-author">
+            <img src="images/face-marcus.jpg" alt="Marcus Chen" loading="lazy"/>
+            <div><strong>Marcus Chen</strong><span>VP Engineering, NexGrid IoT</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">Their OCR and document comparison tool cut our contract review time almost in half. The side-by-side diffs are clear enough that legal adopted it without training.</p>
+          <div class="testimonial-author">
+            <img src="images/face-priya.jpg" alt="Priya Malhotra" loading="lazy"/>
+            <div><strong>Priya Malhotra</strong><span>Head of Operations, Sterling Legal</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">We came for a marketing platform and stayed for the partnership. Crestro thinks in outcomes — not just campaigns shipped.</p>
+          <div class="testimonial-author">
+            <img src="images/face-james.jpg" alt="James Okonkwo" loading="lazy"/>
+            <div><strong>James Okonkwo</strong><span>CMO, Pulse Analytics</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container" style="text-align:center">
+      <p class="section-eyebrow reveal" style="justify-content:center">Ready when you are</p>
+      <h2 class="reveal reveal-d1">Have an idea?<br/><span class="gradient">Let's build what's next.</span></h2>
+      <p class="section-desc reveal reveal-d2" style="margin-left:auto;margin-right:auto">Tell us about the product, the constraint, or the opportunity. We will respond with clarity — not a generic pitch deck.</p>
+      <div style="margin-top:2rem" class="reveal reveal-d3">
+        <a href="work-with-us.html" class="btn btn-lg">Work with us</a>
+      </div>
+    </div>
+  </section>
+
+<footer>
+    <div class="footer-inner">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Crestro" style="width:32px;height:32px" />
+        <div><span>CRESTRO</span><p style="font-size:0.7rem;color:var(--muted);font-weight:400">Engineering What's Next</p></div>
+      </a>
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="what-we-do.html">What We Do</a>
+        <a href="projects.html">Projects</a>
+        <a href="team.html">Team</a>
+        <a href="work-with-us.html">Contact</a>
+      </div>
+      <p class="copyright">© 2026 Crestro. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

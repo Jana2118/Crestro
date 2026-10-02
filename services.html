@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Crestro</title>
+  <meta name="description" content="Software, digital marketing, business consultation, and education consultation." />
+  <link rel="icon" href="logo.png" />
+  <meta name="theme-color" content="#030712" />
+  <meta property="og:title" content="Services | Crestro" />
+  <meta property="og:description" content="Software, digital marketing, business consultation, and education consultation." />
+  <meta property="og:image" content="images/detail-code.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark">
+  <a class="skip" href="#main">Skip to content</a>
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Crestro" /><span>CRESTRO</span></a>
+      <div class="nav-links"><a href="index.html">Home</a><a href="services.html" class="active">Services</a><a href="what-we-do.html">What We Do</a><a href="projects.html">Projects</a><a href="team.html">Team</a><a href="work-with-us.html">Work With Us</a></div>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <svg id="sunIcon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg id="moonIcon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <a href="work-with-us.html" class="btn btn-desktop" style="display:none">Get in touch</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu"><a href="index.html" onclick="closeMenu()">Home</a><a href="services.html" onclick="closeMenu()">Services</a><a href="what-we-do.html" onclick="closeMenu()">What We Do</a><a href="projects.html" onclick="closeMenu()">Projects</a><a href="team.html" onclick="closeMenu()">Team</a><a href="work-with-us.html" onclick="closeMenu()">Work With Us</a></div>
+  </nav>
+
+  <header id="main" class="page-hero"><div class="hero-bg" style="--hero:url('images/detail-servers.jpg')"></div>
+    <div class="orb orb-1"></div><div class="orb orb-2"></div>
+    <div style="position:relative;z-index:1">
+      <p class="section-eyebrow reveal" style="justify-content:center">Services</p>
+      <h1 class="reveal reveal-d1">Everything you need to<br/><span class="gradient">build what's next</span></h1>
+      <p class="reveal reveal-d2" style="max-width:36rem;margin:0 auto;color:var(--muted)">From product engineering to growth and strategy — one partner across the full lifecycle, with the same standard of craft at every step.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="story-block">
+        <div class="story-text reveal-left">
+          <p class="section-eyebrow">01 — Software</p>
+          <h3>Software services that survive real usage</h3>
+          <p>We design and build scalable digital products — web applications, mobile apps, SaaS platforms, and enterprise systems — with clean architecture and modern stacks.</p>
+          <p>Engagements typically cover product discovery, UX/UI, frontend and backend engineering, cloud infrastructure, and ongoing iteration. We optimize for maintainability so the codebase remains an asset, not a liability.</p>
+          <ul style="list-style:none;margin-top:1rem;color:var(--muted);font-size:0.95rem">
+            <li style="margin-bottom:0.4rem">• Custom web & mobile development</li>
+            <li style="margin-bottom:0.4rem">• SaaS & platform engineering</li>
+            <li style="margin-bottom:0.4rem">• API design & system integration</li>
+            <li style="margin-bottom:0.4rem">• Cloud architecture & DevOps</li>
+            <li>• UI/UX design & design systems</li>
+          </ul>
+        </div>
+        <div class="story-media reveal-right"><img src="images/project-migration.jpg" alt="Software engineering" loading="lazy"/></div>
+      </div>
+
+      <div class="story-block reverse">
+        <div class="story-text reveal-right">
+          <p class="section-eyebrow">02 — Marketing</p>
+          <h3>Digital marketing tied to product truth</h3>
+          <p>Growth systems work best when they amplify what the product already does well. We build SEO, content, paid media, and conversion programs that connect messaging to real capabilities.</p>
+          <p>Reporting is built for decisions — not vanity metrics — so you always know what to double down on and what to stop.</p>
+          <ul style="list-style:none;margin-top:1rem;color:var(--muted);font-size:0.95rem">
+            <li style="margin-bottom:0.4rem">• SEO & content strategy</li>
+            <li style="margin-bottom:0.4rem">• Performance marketing & paid media</li>
+            <li style="margin-bottom:0.4rem">• Social & brand campaigns</li>
+            <li style="margin-bottom:0.4rem">• Conversion rate optimization</li>
+            <li>• Analytics & growth experiments</li>
+          </ul>
+        </div>
+        <div class="story-media reveal-left"><img src="images/detail-analytics.jpg" alt="Digital marketing" loading="lazy"/></div>
+      </div>
+
+      <div class="story-block">
+        <div class="story-text reveal-left">
+          <p class="section-eyebrow">03 — Business</p>
+          <h3>Consultation that turns into execution</h3>
+          <p>Strategy without delivery is decoration. We help leadership clarify product direction, digital transformation priorities, and operating models — then stay close enough to see recommendations become roadmaps.</p>
+          <ul style="list-style:none;margin-top:1rem;color:var(--muted);font-size:0.95rem">
+            <li style="margin-bottom:0.4rem">• Product & market strategy</li>
+            <li style="margin-bottom:0.4rem">• Digital transformation roadmaps</li>
+            <li style="margin-bottom:0.4rem">• Process optimization</li>
+            <li style="margin-bottom:0.4rem">• Go-to-market planning</li>
+            <li>• Technology advisory</li>
+          </ul>
+        </div>
+        <div class="story-media reveal-right"><img src="images/detail-desk.jpg" alt="Business consultation" loading="lazy"/></div>
+      </div>
+
+      <div class="story-block reverse">
+        <div class="story-text reveal-right">
+          <p class="section-eyebrow">04 — Education</p>
+          <h3>Education consultation for modern learning</h3>
+          <p>Institutions and edtech teams need more than another portal. We help define digital learning strategy, platform choices, and experience design so learners and administrators both win.</p>
+          <ul style="list-style:none;margin-top:1rem;color:var(--muted);font-size:0.95rem">
+            <li style="margin-bottom:0.4rem">• E-learning platform strategy</li>
+            <li style="margin-bottom:0.4rem">• Curriculum digitization support</li>
+            <li style="margin-bottom:0.4rem">• Learning experience design</li>
+            <li style="margin-bottom:0.4rem">• Institutional digital readiness</li>
+            <li>• Edtech product advisory</li>
+          </ul>
+        </div>
+        <div class="story-media reveal-left"><img src="images/detail-docs.jpg" alt="Education consultation" loading="lazy"/></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" style="text-align:center">
+    <div class="container">
+      <h2 class="reveal">Not sure where to start?</h2>
+      <p class="section-desc reveal reveal-d1" style="margin-left:auto;margin-right:auto">Tell us your goals — we will recommend the right mix of engineering, growth, and strategy.</p>
+      <div style="margin-top:1.75rem" class="reveal reveal-d2"><a href="work-with-us.html" class="btn btn-lg">Talk to us</a></div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Crestro" style="width:32px;height:32px" /><div><span>CRESTRO</span><p style="font-size:0.7rem;color:var(--muted);font-weight:400">Engineering What's Next</p></div></a>
+      <div class="footer-links"><a href="services.html">Services</a><a href="what-we-do.html">What We Do</a><a href="projects.html">Projects</a><a href="team.html">Team</a><a href="work-with-us.html">Contact</a></div>
+      <p class="copyright">© 2026 Crestro. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

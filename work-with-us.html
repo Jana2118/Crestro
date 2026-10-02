@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work With Us | Crestro</title>
+  <meta name="description" content="Start a project with Crestro. Tell us about your idea — software, marketing, strategy, or education." />
+  <link rel="icon" href="logo.png" />
+  <meta name="theme-color" content="#030712" />
+  <meta property="og:title" content="Work With Us | Crestro" />
+  <meta property="og:description" content="Start a project with Crestro. Tell us about your idea — software, marketing, strategy, or education." />
+  <meta property="og:image" content="images/detail-code.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark">
+  <a class="skip" href="#main">Skip to content</a>
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Crestro" /><span>CRESTRO</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="what-we-do.html">What We Do</a>
+        <a href="projects.html">Projects</a>
+        <a href="team.html">Team</a>
+        <a href="work-with-us.html" class="active">Work With Us</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <svg id="sunIcon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg id="moonIcon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <a href="work-with-us.html" class="btn btn-desktop" style="display:none">Get in touch</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMenu()">Home</a>
+      <a href="services.html" onclick="closeMenu()">Services</a>
+      <a href="what-we-do.html" onclick="closeMenu()">What We Do</a>
+      <a href="projects.html" onclick="closeMenu()">Projects</a>
+      <a href="team.html" onclick="closeMenu()">Team</a>
+      <a href="work-with-us.html" onclick="closeMenu()">Work With Us</a>
+    </div>
+  </nav>
+
+  <header id="main" class="page-hero"><div class="hero-bg" style="--hero:url('images/detail-docs.jpg')"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div style="position:relative;z-index:1">
+      <p class="label reveal">Work with us</p>
+      <h1 class="reveal reveal-d1">Have an idea?<br /><span class="gradient">Let's build what's next.</span></h1>
+      <p class="reveal reveal-d2">Whether you’re building an MVP, a SaaS platform, a growth engine, or an education initiative — we’re ready to partner.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container" style="display:grid;gap:3rem">
+      <div class="grid-2" style="align-items:start">
+        <div class="reveal">
+          <h2 style="font-size:1.5rem;margin-bottom:1rem">Get in touch</h2>
+          <p style="color:var(--muted);margin-bottom:1.5rem">Share a few details and we’ll reply within one business day.</p>
+          <p style="margin-bottom:0.5rem"><strong>Email</strong></p>
+          <p style="margin-bottom:1.25rem"><a href="mailto:hello@crestro.io" style="color:var(--primary)">hello@crestro.io</a></p>
+          <p style="margin-bottom:0.5rem"><strong>Website</strong></p>
+          <p style="margin-bottom:1.25rem"><a href="https://www.crestro.io" target="_blank" rel="noopener" style="color:var(--primary)">www.crestro.io</a></p>
+          <p style="color:var(--muted);font-size:0.9rem">Prefer a call? Mention it in the form and we’ll schedule a slot that works for you.</p>
+        </div>
+        <form class="reveal reveal-d1" onsubmit="event.preventDefault();alert('Thank you! We will get back to you soon.');this.reset();">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Email address" required />
+          </div>
+          <input type="text" name="company" placeholder="Company (optional)" />
+          <select name="interest" style="color:var(--fg)">
+            <option value="" disabled selected>What are you interested in?</option>
+            <option>Software development</option>
+            <option>Digital marketing</option>
+            <option>Business consultation</option>
+            <option>Education consultation</option>
+            <option>Multiple / not sure yet</option>
+          </select>
+          <textarea name="message" placeholder="Tell us about your project, timeline, and goals..." required></textarea>
+          <button type="submit" class="btn btn-lg" style="width:fit-content">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:color-mix(in srgb, var(--card) 30%, transparent)">
+    <div class="container">
+      <h2 class="reveal" style="text-align:center;margin-bottom:2.5rem">What happens next</h2>
+      <div class="grid-3">
+        <div class="card reveal" style="text-align:center">
+          <div class="card-icon" style="margin-left:auto;margin-right:auto">1</div>
+          <h3>We listen</h3>
+          <p>A short discovery call to understand goals, constraints, and success criteria.</p>
+        </div>
+        <div class="card reveal reveal-d1" style="text-align:center">
+          <div class="card-icon" style="margin-left:auto;margin-right:auto">2</div>
+          <h3>We propose</h3>
+          <p>A clear scope, timeline, and approach — no fluff, no hidden assumptions.</p>
+        </div>
+        <div class="card reveal reveal-d2" style="text-align:center">
+          <div class="card-icon" style="margin-left:auto;margin-right:auto">3</div>
+          <h3>We build</h3>
+          <p>Collaborative delivery with regular checkpoints and transparent progress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem">
+        <p class="label reveal">Testimonials</p>
+        <h2 class="reveal reveal-d1">Teams that chose to<br/><span class="gradient">build with Crestro</span></h2>
+      </div>
+      <div class="testimonials-grid cols-3">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">Clear scope, honest timelines, and engineers who care about the product after launch. Rare combination.</p>
+          <div class="testimonial-author">
+            <img src="images/face-priya.jpg" alt="Priya Malhotra" loading="lazy"/>
+            <div><strong>Priya Malhotra</strong><span>Head of Operations, Sterling Legal</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-d1">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">They challenged our assumptions in the right places and shipped a marketing stack we still use every day.</p>
+          <div class="testimonial-author">
+            <img src="images/face-james.jpg" alt="James Okonkwo" loading="lazy"/>
+            <div><strong>James Okonkwo</strong><span>CMO, Pulse Analytics</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-d2">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">From kickoff to production, communication was tight. We always knew status, risks, and next decisions.</p>
+          <div class="testimonial-author">
+            <img src="images/face-elena.jpg" alt="Elena Vasquez" loading="lazy"/>
+            <div><strong>Elena Vasquez</strong><span>Product Lead, HealthTrack</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">The engagement story</p>
+        <h2>What a good engagement<br/><span class="gradient">looks like</span></h2>
+        <p class="section-desc">We optimize for clarity early and momentum after kickoff — so you are never guessing what happens next.</p>
+      </div>
+      <div class="chapter reveal">
+        <div class="chapter-num">01</div>
+        <div class="chapter-body">
+          <h3>Listen first</h3>
+          <p>A short discovery conversation covers goals, constraints, timeline pressure, and what success must look like. We ask uncomfortable questions early so the proposal is honest.</p>
+        </div>
+      </div>
+      <div class="chapter reveal">
+        <div class="chapter-num">02</div>
+        <div class="chapter-body">
+          <h3>Propose with edges</h3>
+          <p>You receive a clear scope, assumptions, timeline, and risks — not a vague brochure. If something is a bad fit, we say so. If a phased approach is smarter, we recommend it.</p>
+        </div>
+      </div>
+      <div class="chapter reveal">
+        <div class="chapter-num">03</div>
+        <div class="chapter-body">
+          <h3>Build in the open</h3>
+          <p>Delivery includes regular checkpoints, visible progress, and decisions documented in plain language. You always know status, blockers, and the next milestone.</p>
+        </div>
+      </div>
+      <div class="chapter reveal">
+        <div class="chapter-num">04</div>
+        <div class="chapter-body">
+          <h3>Launch and learn</h3>
+          <p>Go-live includes monitoring, handoff, and a plan for iteration. We care about what happens after the announcement — because that is where products earn trust.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="logo"><img src="logo.png" alt="Crestro" style="width:32px;height:32px" /><div><span>CRESTRO</span><p style="font-size:0.7rem;color:var(--muted);font-weight:400">Engineering What's Next</p></div></a>
+      <div class="footer-links"><a href="services.html">Services</a><a href="what-we-do.html">What We Do</a><a href="projects.html">Projects</a><a href="team.html">Team</a><a href="work-with-us.html">Contact</a></div>
+      <p class="copyright">© 2026 Crestro. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
